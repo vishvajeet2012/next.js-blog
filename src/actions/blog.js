@@ -17,7 +17,8 @@ const blogPostSchema = z.object({
 export async function createBlogPostAction(data) {
   const token = (await cookies()).get("token")?.value;
   const user = await verifyAuth(token);
-
+console.log(user, "user123")
+console.log(token, "data123");
   if (!user) {
     return {
       error: "Unauth user",
