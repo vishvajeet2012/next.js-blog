@@ -51,4 +51,3 @@ export default async function LoginPage() {
     </div>
   );
 }
-git remote add origin https://github.com/vishvajeet2012/next.js-blog.git
