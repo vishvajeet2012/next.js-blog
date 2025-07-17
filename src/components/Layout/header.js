@@ -86,7 +86,7 @@ export default function Header({ user }) {
   async function handleProceedWithCheckout() {
     try {
       const result = await prePaymentAction(paymentEmail);
-      console.log(result, "handleProceedWithCheckout");
+  
 
       if (result.success) {
         setPaymentEmail("");
@@ -114,9 +114,9 @@ export default function Header({ user }) {
                 className="text-2xl cursor-pointer font-bold font-serif tracking-tighter"
               >
                 <span className="bg-black text-white px-2 py-1 rounded-full">
-                  M
+                  E
                 </span>
-                <span className="ml-1">Medium</span>
+                <span className="ml-1">Emoticode</span>
               </h1>
             </div>
             <div className="flex items-center space-x-4">
