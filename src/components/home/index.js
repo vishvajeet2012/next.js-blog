@@ -11,7 +11,6 @@ export default function HomeComponent({ posts }) {
   const [isGridView, setIsGridView] = useState(false);
   const [currentSelectedCategory, setCurrentSelectedCategory] = useState("");
   const router = useRouter();
-  console.log(currentSelectedCategory, "currentSelectedCategory");
 
   const filteredPosts =
     posts && posts.length > 0

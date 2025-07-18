@@ -108,12 +108,7 @@ export async function getBlogPostsAction() {
   const token = (await cookies()).get("token")?.value;
   const user = await verifyAuth(token);
 
-  if (!user) {
-    return {
-      error: "Unauth user",
-      status: 401,
-    };
-  }
+ 
 
   try {
     const req = await request();
@@ -171,12 +166,7 @@ export async function getBlogPostByIdAction(id) {
   const token = (await cookies()).get("token")?.value;
   const user = await verifyAuth(token);
 
-  if (!user) {
-    return {
-      error: "Unauth user",
-      status: 401,
-    };
-  }
+ 
 
   try {
     const req = await request();
