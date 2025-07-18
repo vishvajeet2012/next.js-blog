@@ -173,7 +173,7 @@ export async function getBlogPostByIdAction(id) {
 
  if(!user){
   return {
-    error: "Unauth user",
+    error: "Unauth user login to continue",
     status: 401,
   };
  }
